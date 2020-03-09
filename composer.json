@@ -1,0 +1,82 @@
+{
+  "name": "bnomei/kirby3-htmlpurifier",
+  "type": "kirby-plugin",
+  "version": "1.0.0",
+  "description": "Static class method, Uniform-Guard and Field-Method to filter your \"dirty\" HTML inputs to \"clean\" HTML.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bruno Meilick",
+      "email": "b@bnomei.com"
+    }
+  ],
+  "keywords": [
+    "kirby3",
+    "kirby3-cms",
+    "kirby3-plugin",
+    "form",
+    "submit",
+    "uniform",
+    "sanitize",
+    "security",
+    "xss",
+    "clean",
+    "striptags",
+    "input",
+    "safe",
+    "html",
+    "filter",
+    "kses",
+    "htmLawed",
+    "headless",
+    "kql"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bnomei\\": "classes/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.2.0",
+    "ezyang/htmlpurifier": "^4.12",
+    "getkirby/composer-installer": "^1.1"
+  },
+  "require-dev": {
+    "getkirby/cms": "^3.2",
+    "mzur/kirby-uniform": "^4.0",
+    "nunomaduro/phpinsights": "^1.8",
+    "php-coveralls/php-coveralls": "^2.1",
+    "phpstan/phpstan": "^0.12.8",
+    "phpunit/phpunit": "^8.3"
+  },
+  "scripts": {
+    "analyze": "phpstan analyse",
+    "insights": "./vendor/bin/phpinsights -v",
+    "fix": "php-cs-fixer fix",
+    "test": [
+      "mkdir -p tests/logs",
+      "phpunit --configuration ./phpunit.xml"
+    ],
+    "dist": [
+      "composer install --no-dev --optimize-autoloader",
+      "git rm -rf --cached .; git add .;"
+    ],
+    "kirby": [
+      "composer install",
+      "composer update",
+      "composer install --working-dir=tests/kirby --no-dev --optimize-autoloader",
+      "composer update --working-dir=tests/kirby"
+    ]
+  },
+  "extra": {
+    "kirby-cms-path": "tests/kirby"
+  },
+  "suggest": {
+    "mzur/kirby-uniform": "Use this plugin with Uniform to purify you html inputs.",
+    "getkirby/kql": "Use this plugin with KQL to make sure you html from fields is valid (like for Vue v-html)."
+  }
+}
