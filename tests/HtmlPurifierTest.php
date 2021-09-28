@@ -64,12 +64,19 @@ images/space-needle-hd.jpg 3x">')
     public function testRichFormattingPreserved()
     {
         $this->assertEquals(
-            '<table><caption>
+            '<table>
+  <caption>
     Cool table
   </caption>
-  <tfoot><tr><th>I can do so much!</th>
-    </tr></tfoot><tbody><tr><td style="font-size:16pt;color:#F00;font-family:sans-serif;text-align:center;">Wow</td>
-  </tr></tbody></table>',
+  <tfoot>
+    <tr>
+      <th>I can do so much!</th>
+    </tr>
+  </tfoot>
+  <tbody><tr>
+    <td style="font-size:16pt;color:#F00;font-family:sans-serif;text-align:center;">Wow</td>
+  </tr>
+</tbody></table>',
             Bnomei\HtmlPurifier::purify('<table>
   <caption>
     Cool table

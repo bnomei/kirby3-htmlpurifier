@@ -44,6 +44,7 @@ class ComposerStaticInitfb7b9379d06e94742a854e1817259fad
 
     public static $classMap = array (
         'Bnomei\\HtmlPurifier' => __DIR__ . '/../..' . '/classes/HtmlPurifier.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'HTMLPurifier' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.php',
         'HTMLPurifier_Arborize' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Arborize.php',
         'HTMLPurifier_AttrCollections' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/AttrCollections.php',
@@ -209,7 +210,6 @@ class ComposerStaticInitfb7b9379d06e94742a854e1817259fad
         'HTMLPurifier_Injector_SafeObject' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Injector/SafeObject.php',
         'HTMLPurifier_Language' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Language.php',
         'HTMLPurifier_LanguageFactory' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/LanguageFactory.php',
-        'HTMLPurifier_Language_en_x_test' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Language/classes/en-x-test.php',
         'HTMLPurifier_Length' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Length.php',
         'HTMLPurifier_Lexer' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Lexer.php',
         'HTMLPurifier_Lexer_DOMLex' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Lexer/DOMLex.php',
@@ -223,9 +223,6 @@ class ComposerStaticInitfb7b9379d06e94742a854e1817259fad
         'HTMLPurifier_Printer' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer.php',
         'HTMLPurifier_Printer_CSSDefinition' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/CSSDefinition.php',
         'HTMLPurifier_Printer_ConfigForm' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.php',
-        'HTMLPurifier_Printer_ConfigForm_NullDecorator' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.php',
-        'HTMLPurifier_Printer_ConfigForm_bool' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.php',
-        'HTMLPurifier_Printer_ConfigForm_default' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.php',
         'HTMLPurifier_Printer_HTMLDefinition' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/HTMLDefinition.php',
         'HTMLPurifier_PropertyList' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/PropertyList.php',
         'HTMLPurifier_PropertyListIterator' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/PropertyListIterator.php',

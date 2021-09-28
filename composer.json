@@ -1,7 +1,7 @@
 {
   "name": "bnomei/kirby3-htmlpurifier",
   "type": "kirby-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Static class method, Uniform-Guard and Field-Method to filter your \"dirty\" HTML inputs to \"clean\" HTML.",
   "license": "MIT",
   "authors": [
@@ -41,16 +41,14 @@
     "sort-packages": true
   },
   "require": {
-    "php": ">=7.2.0",
+    "php": ">=7.3.0",
     "ezyang/htmlpurifier": "^4.12",
     "getkirby/composer-installer": "^1.1"
   },
   "require-dev": {
     "getkirby/cms": "^3.2",
     "mzur/kirby-uniform": "^4.0",
-    "nunomaduro/phpinsights": "^1.8",
     "php-coveralls/php-coveralls": "^2.1",
-    "phpstan/phpstan": "^0.12.8",
     "phpunit/phpunit": "^8.3"
   },
   "scripts": {

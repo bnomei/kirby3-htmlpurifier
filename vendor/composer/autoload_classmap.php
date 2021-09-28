@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Bnomei\\HtmlPurifier' => $baseDir . '/classes/HtmlPurifier.php',
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'HTMLPurifier' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier.php',
     'HTMLPurifier_Arborize' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Arborize.php',
     'HTMLPurifier_AttrCollections' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/AttrCollections.php',
@@ -172,7 +173,6 @@ return array(
     'HTMLPurifier_Injector_SafeObject' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Injector/SafeObject.php',
     'HTMLPurifier_Language' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Language.php',
     'HTMLPurifier_LanguageFactory' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/LanguageFactory.php',
-    'HTMLPurifier_Language_en_x_test' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Language/classes/en-x-test.php',
     'HTMLPurifier_Length' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Length.php',
     'HTMLPurifier_Lexer' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Lexer.php',
     'HTMLPurifier_Lexer_DOMLex' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Lexer/DOMLex.php',
@@ -186,9 +186,6 @@ return array(
     'HTMLPurifier_Printer' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer.php',
     'HTMLPurifier_Printer_CSSDefinition' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/CSSDefinition.php',
     'HTMLPurifier_Printer_ConfigForm' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.php',
-    'HTMLPurifier_Printer_ConfigForm_NullDecorator' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.php',
-    'HTMLPurifier_Printer_ConfigForm_bool' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.php',
-    'HTMLPurifier_Printer_ConfigForm_default' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.php',
     'HTMLPurifier_Printer_HTMLDefinition' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/Printer/HTMLDefinition.php',
     'HTMLPurifier_PropertyList' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/PropertyList.php',
     'HTMLPurifier_PropertyListIterator' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier/PropertyListIterator.php',
