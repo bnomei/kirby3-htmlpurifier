@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitfb7b9379d06e94742a854e1817259fad
+class ComposerStaticInitcf518c6a5a0209c1a11aa0315074068c
 {
     public static $files = array (
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
@@ -74,6 +74,7 @@ class ComposerStaticInitfb7b9379d06e94742a854e1817259fad
         'HTMLPurifier_AttrDef_HTML_Bool' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Bool.php',
         'HTMLPurifier_AttrDef_HTML_Class' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Class.php',
         'HTMLPurifier_AttrDef_HTML_Color' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Color.php',
+        'HTMLPurifier_AttrDef_HTML_ContentEditable' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/ContentEditable.php',
         'HTMLPurifier_AttrDef_HTML_FrameTarget' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/FrameTarget.php',
         'HTMLPurifier_AttrDef_HTML_ID' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/ID.php',
         'HTMLPurifier_AttrDef_HTML_Length' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Length.php',
@@ -284,10 +285,10 @@ class ComposerStaticInitfb7b9379d06e94742a854e1817259fad
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitfb7b9379d06e94742a854e1817259fad::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitfb7b9379d06e94742a854e1817259fad::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitfb7b9379d06e94742a854e1817259fad::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitfb7b9379d06e94742a854e1817259fad::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcf518c6a5a0209c1a11aa0315074068c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcf518c6a5a0209c1a11aa0315074068c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitcf518c6a5a0209c1a11aa0315074068c::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitcf518c6a5a0209c1a11aa0315074068c::$classMap;
 
         }, null, ClassLoader::class);
     }
